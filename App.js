@@ -42,4 +42,4 @@ console.log(parent);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(parent);
+root.render(parent); // this will replace if anything is there inside the root element
