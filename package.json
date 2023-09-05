@@ -1,0 +1,23 @@
+{
+    "name": "namaste-react",
+    "version": "1.0.0",
+    "description": "This is learning repo of react",
+    "main": "App.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ayush-kumar774/Namaste-React.git"
+    },
+    "keywords": [],
+    "author": "Aayush Kumar",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ayush-kumar774/Namaste-React/issues"
+    },
+    "homepage": "https://github.com/ayush-kumar774/Namaste-React#readme",
+    "devDependencies": {
+        "parcel": "^2.9.3"
+    }
+}
