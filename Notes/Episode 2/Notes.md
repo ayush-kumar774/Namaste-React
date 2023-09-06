@@ -28,3 +28,14 @@ So, for importing react code we have to write it like this <script type="module"
 - HMR = Hot Module Replacement
 - File Watching Algorithm - written in C++
 - Caching - Faster Builds
+- Image Optimization
+- Minification
+- Bundling
+- Compressing
+- Consistent Hashing - Consistent hashing is a technique used in distributed computing and data storage systems to efficiently distribute and balance the load of data across multiple nodes or servers while maintaining stability when nodes are added or removed from the system.
+- Code Splitting
+- Differential Bundling - to support older browsers and mobile browser
+- Diagnostic
+- Error Handling
+- HTTPs
+- Tree Shaking - remove unused code

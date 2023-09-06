@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 {/* <div id="parent">
       <div id="child">
             <h1>I'm a nested H1 tag :)</h1>
@@ -22,7 +22,7 @@ const parent = React.createElement(
                   {
                         id: "child1"
                   },
-                  [React.createElement("h1", {}, "I'm a nested H1 tag inside child 1 div :)"), React.createElement("h2", {}, "I am sibling inside child 1 div :)")]
+                  [React.createElement("h1", {}, "Learning React 🚀"), React.createElement("h2", {}, "I am sibling inside child 1 div :)")]
             ),
             React.createElement(
                   "div",
