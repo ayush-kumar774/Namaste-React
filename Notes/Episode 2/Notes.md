@@ -1,25 +1,26 @@
-```javascript
-npm is not node package manager.
-package.json is configuration for npm.
 
-npm install -D parcel (-D is for dev dependency).
-In this episode we are using parcel woth react.
+## npm is not node package manager.
+## package.json is configuration for npm.
 
-"parcel": "^2.9.3"
-^ -> (caret) If we have caret in our package.json file then, it will upgrade minor version itself.
+## npm install -D parcel (-D is for dev dependency).
 
-~ ->(tilde) If we have tilde in our package.json file then, it will upgrade major version itself.
 
-It is safe to use ^(caret).
+## "parcel": "^2.9.3"
+## ^ -> (caret) If we have caret in our package.json file then, it will upgrade minor version itself.
 
-package-lock.json --> Keeps the track of exact version of every dependency installed in the system.
+## ~ ->(tilde) If we have tilde in our package.json file then, it will upgrade major version itself.
 
-Transitive Dependency -> Dependencies are having their further dependencies.
+## It is safe to use ^(caret).
+
+## package-lock.json --> Keeps the track of exact version of every dependency installed in the system.
+
+## Transitive Dependency -> Dependencies are having their further dependencies.
 Ex :- we have added parcel as dependency further more parcel is also having some dependency of it's own and those dependent project can have again their own dependency.
 
+```javascript
 <script src="./ReactApp.js"> // this line will not work because normal Browser scripts cannot have imports or exports
-So, for importing react code we have to write it like this <script type="module" src="your-module.js"></script>
-
+// So, for importing react code we have to write it like this 
+<script type="module" src="your-module.js"></script>
 
 ```
 # Parcel
@@ -39,3 +40,8 @@ So, for importing react code we have to write it like this <script type="module"
 - Error Handling
 - HTTPs
 - Tree Shaking - remove unused code
+- Different build for development and prod 
+- {npx parcel index.html} for dev environment
+- {npx parcel build index.html} for prod environment and we have to remove main (entry point) of our app from package.json
+- When ever we write parcel index.html or parcel build index.html parcel automatically compress all the code and store inside dist folder.
+
