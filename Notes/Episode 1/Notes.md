@@ -1,8 +1,5 @@
-``` javascript
-React.createElement()
-
-React.createElement() return an object which is understandable by browser. It takes first parameter which is an element, second parameter is properties or attribute and third parameter takes children as input.
-```
+- React.createElement()
+- React.createElement() return an object which is understandable by browser. It takes first parameter which is an element, second parameter is properties or attribute and third parameter takes children as input.
 
 ```javascript
 const parent = React.createElement(
@@ -29,8 +26,7 @@ const parent = React.createElement(
       
 );
 ```
-```javascript
-Notes
--> React can be applied to specific part of HTML page or code.
--> Whatever is HTML code is written inside id - root, React.render will replace it and render Whatever is written inside render method.
-```
+
+- Notes
+- -> React can be applied to specific part of HTML page or code.
+- -> Whatever is HTML code is written inside id - root, React.render will replace it and render Whatever is written inside render method.
