@@ -1,0 +1,2 @@
+- npm start is equal to npm run start.
+- For adding script we need to add the command and name/shortcut as key value pair inside scripts object in the package.json file.
