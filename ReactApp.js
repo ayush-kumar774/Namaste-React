@@ -34,15 +34,16 @@ import ReactDOM from "react-dom/client";
 //                   [React.createElement("h1", {}, "I'm a nested H1 tag inside child 2 div :)"), React.createElement("h2", {}, "I am sibling inside child 2 div  :)")]
 //             )
 //       ]
-      
+
 // );
-// // Alternate of this is JSX.
+
+// ? Alternate of this is JSX.
 
 // console.log(parent);
 
-// // const heading = React.createElement("h1", { id: "heading", xyz: "abc" }, "Hello World from React!!");
+//  const heading = React.createElement("h1", { id: "heading", xyz: "abc" }, "Hello World from React!!");
 
-// // console.log(heading); //object
+//  console.log(heading); //object
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -55,19 +56,19 @@ import ReactDOM from "react-dom/client";
 // React.createElement ==> ReactElement - JS Object ==> HTMLElement(render)
 
 
-const heading = React.createElement("h1", {id: "heading"}, "Namaste React 🚀");
+const heading = React.createElement("h1", { id: "heading" }, "Namaste React 🚀");
 
-// JSX - JSX is not HTML in JS, it is HTML like syntax
-// It is transpiled before it reaches the JS Engine // PARCEL --> Babel
-// JSX ==> React.createElement ==> ReactElement - JS Object ==> HTMLElement(render)
+// * JSX - JSX is not HTML in JS, it is HTML like syntax
+// * It is transpiled before it reaches the JS Engine // PARCEL --> Babel
+// * JSX ==> Babel transpile it to React.createElement ==> ReactElement - JS Object ==> HTMLElement(render)
 
-const jsxHeading = <h1 id="heading"> Namaste React using JSX 🚀 </h1>
+const Title = () => (<h1 id="heading"> Namaste React using JSX 🚀 </h1>);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 console.log(heading);
 
-console.log(jsxHeading);
+// console.log(jsxHeading);
 
 // if (heading == jsxHeading) {
 //       console.log("These both headings are same");
@@ -76,4 +77,27 @@ console.log(jsxHeading);
 //       console.log("Not same")
 // }
 
-root.render(jsxHeading);
+
+/*
+      ! React Component
+      * Class Based Component -> OLD
+      * Functional Component -> NEW 
+*/
+// ! React Functional Component
+
+// const HeadingComponent = () => {
+//       return <h1 id="heading">Namaste React from Functional Component</h1>;
+// }
+
+// * Component Composition
+const HeadingComponent2 = () => (
+      <div>
+            <Title />
+            <h1 id="heading">Namaste React from Functional Component 🚀</h1>
+      </div>
+); // ! no need to write return statement.
+
+// root.render(jsxHeading);
+root.render(<HeadingComponent2 />); // ! This is how we render components
+
+
