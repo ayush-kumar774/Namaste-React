@@ -78,6 +78,17 @@ console.log(heading);
 // }
 
 
+const value = "Heading 3";
+const TitleJSXFunctionalComponent = () => {
+      return (
+            <div className="title">
+                  <h1>Heading 1</h1>
+                  <h2>Heading 2</h2>
+                  <h3>{value}</h3>
+            </div>
+      );
+};
+
 /*
       ! React Component
       * Class Based Component -> OLD
@@ -103,6 +114,6 @@ const HeadingComponent2 = () => (
 ); // ! no need to write return statement.
 
 // root.render(jsxHeading);
-root.render(<HeadingComponent2 />); // ! This is how we render components
+root.render(<TitleJSXFunctionalComponent />); // ! This is how we render components
 
 
