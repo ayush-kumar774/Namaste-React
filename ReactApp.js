@@ -100,18 +100,36 @@ const TitleJSXFunctionalComponent = () => {
 //       return <h1 id="heading">Namaste React from Functional Component</h1>;
 // }
 
-const number = 1000 ;
+const number = 1000;
 
 // * Component Composition
 const HeadingComponent2 = () => (
       <div id="container">
-           {/* <h1 id="heading">{"Number is " + number} </h1>  */}
+            {/* <h1 id="heading">{"Number is " + number} </h1>  */}
             {/* <Title /> */}
             {/* <Title> </Title> */}
             {Title()}
             <h1 id="heading">Namaste React from Functional Component 🚀</h1>
       </div>
 ); // ! no need to write return statement.
+
+
+const Header = () => {
+      return (
+            <div className="header">
+                  <div className="logo">
+                        <img src="path_to_your_logo.png" alt="Logo" />
+                  </div>
+                  <div className="search">
+                        <input type="text" placeholder="Search..." />
+                        <button>Search</button>
+                  </div>
+                  <div className="user">
+                        <img src="path_to_your_user_icon.png" alt="User" />
+                  </div>
+            </div>
+      );
+};
 
 // root.render(jsxHeading);
 root.render(<TitleJSXFunctionalComponent />); // ! This is how we render components

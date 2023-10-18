@@ -2,7 +2,7 @@
 
 
 
-// // ? reate a nested header element using React.createElement(h1, h2, h3 inside a div with class "title")
+//  ? reate a nested header element using React.createElement(h1, h2, h3 inside a div with class "title")
 
 // const title = React.createElement(
 //       "div",
@@ -11,9 +11,9 @@
 //       React.createElement("h2", { id: "heading2" }, "Heading 2"),
 //       React.createElement("h3", { id: "heading3" }, "Heading 3")
 // );
-// // root.render(title);
+//  root.render(title);
 
-// // ? create the same element using JSX
+// ? create the same element using JSX
 
 // const TitleJSX = () => (
 //       <div className="title">
@@ -23,9 +23,9 @@
 //       </div>
 // )
 
-// // ? create a functional component of the same with JSX
+//  ? create a functional component of the same with JSX
 
-// const value = "Heading 3";
+const value = "Heading 3";
 // const TitleJSXFunctionalComponent = () => {
 //       return (
 //             <div className="title">
@@ -35,6 +35,30 @@
 //             </div>
 //       );
 // };
+
+// ?  Pass attributes into the tag in JSX
+
+// const TitleJSXFunctionalComponent = (props) => {
+//       return (
+//             <div className="title">
+//                   <h1>{props.heading1}</h1>
+//                   <h2>{props.heading1}</h2>
+//                   <h3>{props.heading1}</h3>
+//             </div>
+//       );
+// };
+
+// root.render(
+//       <TitleJSXFunctionalComponent 
+//         heading1="Heading 1" 
+//         heading2="Heading 2" 
+//         heading3={value} 
+//       />
+//     );
+    
+// ? {TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>} in JSX
+
+
 
 // root.render(<TitleJSX />);
 

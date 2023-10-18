@@ -1,36 +1,21 @@
-// import React from "react";
-// import ReactDOM from "react-dom/client";
+// import React from 'react';
+// import './Header.css'; // Import your CSS file
 
-
-
-// const heading = React.createElement("h1", { id: "heading" }, "Namaste React 🚀");
-
-// const Title = () => (<h1 id="heading" tabIndex={5}> Namaste React using JSX 🚀 </h1>);
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-
-// console.log(heading);
-
-
-
-// /*
-//       ! React Component
-//       * Class Based Component -> OLD
-//       * Functional Component -> NEW 
-// */
-// // ! React Functional Component
-
-// const number = 1000 ;
-
-// // * Component Composition
-// const HeadingComponent2 = () => (
-//       <div id="container">
-//             {Title()}
-//             <h1 id="heading">Namaste React from Functional Component 🚀</h1>
+// const Header = () => {
+//   return (
+//     <div className="header">
+//       <div className="logo">
+//         <img src="path_to_your_logo.png" alt="Logo" />
 //       </div>
-// ); // ! no need to write return statement.
+//       <div className="search">
+//         <input type="text" placeholder="Search..." />
+//         <button>Search</button>
+//       </div>
+//       <div className="user">
+//         <img src="path_to_your_user_icon.png" alt="User" />
+//       </div>
+//     </div>
+//   );
+// };
 
-// // root.render(jsxHeading);
-// root.render(<HeadingComponent2 />); // ! This is how we render components
-
-
+// root.render(<Header />);
