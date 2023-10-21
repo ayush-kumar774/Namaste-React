@@ -2,6 +2,28 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 
+/*
+
+* Header
+* - Logo
+* - Nav Items
+
+* Body
+* - Search bar (input)
+* - RestrauntContainer
+*   - RestrauntCard
+*           - Img
+*           - Name of Restraunt, Star Rating, Cuisines, Delivery Time
+*
+* Footer
+* - Copyright
+* - Link
+* - Address
+* - Contact
+
+*/
+
+
 {/* <div id="parent">
       <div id="child">
             <h1>I'm a nested H1 tag :)</h1>
@@ -56,17 +78,17 @@ import ReactDOM from "react-dom/client";
 // React.createElement ==> ReactElement - JS Object ==> HTMLElement(render)
 
 
-const heading = React.createElement("h1", { id: "heading" }, "Namaste React 🚀");
+// const heading = React.createElement("h1", { id: "heading" }, "Namaste React 🚀");
 
 // * JSX - JSX is not HTML in JS, it is HTML like syntax
 // * It is transpiled before it reaches the JS Engine // PARCEL --> Babel
 // * JSX ==> Babel transpile it to React.createElement ==> ReactElement - JS Object ==> HTMLElement(render)
 
-const Title = () => (<h1 id="heading" tabIndex={5}> Namaste React using JSX 🚀 </h1>);
+// const Title = () => (<h1 id="heading" tabIndex={5}> Namaste React using JSX 🚀 </h1>);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// const root = ReactDOM.createRoot(document.getElementById('root'));
 
-console.log(heading);
+// console.log(heading);
 
 // console.log(jsxHeading);
 
@@ -78,16 +100,16 @@ console.log(heading);
 // }
 
 
-const value = "Heading 3";
-const TitleJSXFunctionalComponent = () => {
-      return (
-            <div className="title">
-                  <h1>Heading 1</h1>
-                  <h2>Heading 2</h2>
-                  <h3>{value}</h3>
-            </div>
-      );
-};
+// const value = "Heading 3";
+// const TitleJSXFunctionalComponent = () => {
+//       return (
+//             <div className="title">
+//                   <h1>Heading 1</h1>
+//                   <h2>Heading 2</h2>
+//                   <h3>{value}</h3>
+//             </div>
+//       );
+// };
 
 /*
       ! React Component
@@ -100,38 +122,110 @@ const TitleJSXFunctionalComponent = () => {
 //       return <h1 id="heading">Namaste React from Functional Component</h1>;
 // }
 
-const number = 1000;
+// const number = 1000;
 
 // * Component Composition
-const HeadingComponent2 = () => (
-      <div id="container">
-            {/* <h1 id="heading">{"Number is " + number} </h1>  */}
-            {/* <Title /> */}
-            {/* <Title> </Title> */}
-            {Title()}
-            <h1 id="heading">Namaste React from Functional Component 🚀</h1>
-      </div>
-); // ! no need to write return statement.
+// const HeadingComponent2 = () => (
+//       <div id="container">
+//             {/* <h1 id="heading">{"Number is " + number} </h1>  */}
+//             {/* <Title /> */}
+//             {/* <Title> </Title> */}
+//             {Title()}
+//             <h1 id="heading">Namaste React from Functional Component 🚀</h1>
+//       </div>
+// ); // ! no need to write return statement.
 
+
+// const Header = () => {
+//       return (
+//             <div className="header">
+//                   <div className="logo">
+//                         <img src="path_to_your_logo.png" alt="Logo" />
+//                   </div>
+//                   <div className="search">
+//                         <input type="text" placeholder="Search..." />
+//                         <button>Search</button>
+//                   </div>
+//                   <div className="user">
+//                         <img src="path_to_your_user_icon.png" alt="User" />
+//                   </div>
+//             </div>
+//       );
+// };
+
+// ! Episode 4 
 
 const Header = () => {
-      return (
+      return(
             <div className="header">
-                  <div className="logo">
-                        <img src="path_to_your_logo.png" alt="Logo" />
+                  <div className="logo-container">
+                        <img className="logo" src="https://www.logodesign.net/logo/pizza-man-charactor-with-knife-and-fork-5382ld.png" />
                   </div>
-                  <div className="search">
-                        <input type="text" placeholder="Search..." />
-                        <button>Search</button>
-                  </div>
-                  <div className="user">
-                        <img src="path_to_your_user_icon.png" alt="User" />
+                  <div className="nav-items">
+                        <ul>
+                              <li>Home</li>
+                              <li>About Us</li>
+                              <li>Contact Us</li>
+                              <li>Cart</li>
+                        </ul>
                   </div>
             </div>
-      );
+      )
+}
+
+const styleCard = {
+      backgroundColor : "red",
 };
 
+const RestaurantCard = () => {
+      return (
+            <div className="res-card" style={{styleCard}}>
+                  <img 
+                        className="res-logo"
+                        alt="res-logo"
+                        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/nw2xeql0jokm2rqnkzfs"
+                  />
+                  <h3>Meghana Foods</h3>
+                  <h4>Biryani, Andhra, South Indian, North Indian, Asian</h4>
+                  <h4>4.4 Stars</h4>
+                  <h4>18 mins</h4>
+            </div>
+      )
+}
+
+const Body = () => {
+      return (
+            <div className="body">
+                  <div className="Search">Search</div>
+                  <div className="res-container">
+                        <RestaurantCard Meghana Foods/>
+                        <RestaurantCard KFC/>
+                        <RestaurantCard Burger King/>
+                        <RestaurantCard McDonald/>
+                        <RestaurantCard Bakingo/>
+                        <RestaurantCard Cheesecake Co/>
+                        <RestaurantCard Big Bowl/>
+                        <RestaurantCard Great Indian Khichdi/>
+                        <RestaurantCard Navratri Specials/>
+                        <RestaurantCard Leon Burger/>
+                        <RestaurantCard Asha Tiffins/>
+                        <RestaurantCard Pizza Hut/>
+                  </div>
+            </div>
+      )
+}
+const AppLayout = () => {
+      return (
+            <div className="app">
+                  <Header />
+                  <Body />
+            </div>
+      )
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
 // root.render(jsxHeading);
-root.render(<TitleJSXFunctionalComponent />); // ! This is how we render components
+root.render(<AppLayout />); // ! This is how we render components
 
 

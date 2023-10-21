@@ -1,15 +1,63 @@
-#heading {
+.header {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid rebeccapurple;
+}
+
+.logo {
+      width: 195px;
+      height: 195px;
+}
+
+.nav-items>ul {
+      display: flex;
+      padding: 0px 20px;
+      list-style-type: none;
+      font-size: 24px;
+}
+
+
+.nav-items>ul>li {
+      padding: 10px;
+      margin: 10px;
+}
+
+.res-container {
+      display: flex;
+      flex-wrap: wrap;
+}
+
+.res-card {
+      width: 300px;
+      height: 300px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+      margin: 5px;
+}
+
+.res-card:hover {
+      cursor: pointer;
+}
+
+.res-logo {
+      max-width: 50%;
+      border-radius: 50%;
+}
+
+h3 {
+      margin-top: 10px;
+      font-size: 1.5em;
       color: red;
 }
 
-#child1 {
-      color: yellow;
-}
-
-#child2 {
+h4 {
+      margin: 5px 0;
+      font-size: 1em;
       color: green;
 }
 
-#hello {
-      color: orange;
-}
+/* Add more styles as needed */
