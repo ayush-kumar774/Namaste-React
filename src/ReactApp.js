@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
 
-
 /*
 * Header
 * - Logo
@@ -15,7 +14,7 @@ import Body from "./components/Body";
 *   - RestrauntCard
 *           - Img
 *           - Name of Restraunt, Star Rating, Cuisines, Delivery Time
-*
+
 * Footer
 * - Copyright
 * - Link
@@ -34,5 +33,3 @@ const AppLayout = () => {
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<AppLayout />); // ! This is how we render components
-
-

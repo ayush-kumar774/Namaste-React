@@ -59,4 +59,11 @@ h4 {
       color: green;
 }
 
+.filter-btn {
+      margin: 10px;
+      color: red;
+      background-color: yellow;
+      cursor: pointer;
+}
+
 /* Add more styles as needed */

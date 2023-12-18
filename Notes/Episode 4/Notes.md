@@ -61,3 +61,14 @@ console.log(max);         // This will output: 1000
 console.log(min);         // This will output: -1000
 
 ```
+
+## React Hooks
+
+### Normal JS Utility Function prebuilt inside the react
+
+- `useState`
+- `useEffect`
+- `useContext`
+- `useReducer`
+
+### Whenever a state variable updates, react re-renders the components
